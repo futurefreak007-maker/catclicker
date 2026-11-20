@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -95,6 +94,60 @@ h1 {
     margin-top: 15px;
 }
 
+.error-title {
+    text-align: center;
+    font-size: clamp(27px, 5vw, 42px);
+    font-weight: 800;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, #ff75d8, #a879ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.error-image {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid #35303d;
+}
+
+.step {
+    margin-top: 28px;
+}
+
+.step h3 {
+    color: #e4b1ff;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.step img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid #35303d;
+}
+
+.step p {
+    color: #b9b9c2;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.success {
+    text-align: center;
+    color: #d58aff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
 footer {
     text-align: center;
     padding: 35px 15px;
@@ -121,7 +174,7 @@ footer span {
 <body>
 
 <header>
-    <div class="logo">^-^</div>
+    <div class="logo">🐱</div>
 
     <h1>Download CatClicker</h1>
 
@@ -137,6 +190,24 @@ footer span {
 </header>
 
 <main class="container">
+
+    <!-- FEHLERMELDUNG -->
+
+    <section class="section">
+
+        <h2 class="error-title">
+            Fehler gefunden, schon dabei!
+        </h2>
+
+        <img
+            src="Error.png"
+            alt="CatClicker Fehlermeldung"
+            class="error-image"
+        >
+
+    </section>
+
+    <!-- WAS IST CATCLICKER -->
 
     <section class="section">
         <h2>Was ist CatClicker?</h2>
@@ -159,21 +230,94 @@ footer span {
         </p>
     </section>
 
+    <!-- INSTALLATIONSANLEITUNG -->
+
     <section class="section">
-        <h2>Infos zur Installation</h2>
+
+        <h2>Ausführliche Installationsanleitung</h2>
+
+        <div class="step">
+            <h3>1. ZIP-Datei extrahieren</h3>
+
+            <p>
+                Lade die CatClicker-Setup.zip herunter und
+                extrahiere die ZIP-Datei.
+            </p>
+
+            <img src="1.png" alt="ZIP-Datei extrahieren">
+        </div>
+
+        <div class="step">
+            <h3>2. Installer öffnen</h3>
+
+            <p>
+                Öffne den extrahierten Ordner und starte
+                die Datei <b>Installer.exe</b>.
+            </p>
+
+            <img src="3.png" alt="Installer öffnen">
+        </div>
+
+        <div class="step">
+            <h3>3. Windows Defender</h3>
+
+            <p>
+                Falls eine Windows Defender SmartScreen-Warnung
+                erscheint, überprüfe zuerst, ob du den Installer
+                aus der offiziellen CatClicker-Quelle heruntergeladen
+                hast. Führe ihn nur aus, wenn du der Datei vertraust.
+            </p>
+
+            <img src="4.png" alt="Windows Defender Nachricht">
+        </div>
+
+        <div class="step">
+            <h3>4. Installation starten</h3>
+
+            <p>
+                Klicke beim Installer auf den Button
+                <b>„Installieren“</b>.
+            </p>
+
+            <img src="5.png" alt="Installieren Button">
+        </div>
+
+        <div class="step">
+            <h3>5. Installation abgeschlossen</h3>
+
+            <p>
+                Wenn die Installation erfolgreich war,
+                sollte diese Nachricht angezeigt werden.
+                Klicke auf <b>„OK“</b>.
+            </p>
+
+            <img src="6.png" alt="Installation erfolgreich">
+        </div>
+
+        <div class="step">
+            <h3>6. CatClicker starten</h3>
+
+            <p>
+                Öffne nun <b>CatClicker.exe</b> auf deinem Desktop.
+            </p>
+
+            <img src="7.png" alt="CatClicker auf dem Desktop">
+        </div>
+
+        <div class="success">
+            Fertig! 🐱
+        </div>
+
+    </section>
+
+    <!-- WEITERE INFOS -->
+
+    <section class="section">
+        <h2>Weitere Infos</h2>
 
         <p>
             Den CatClicker-Setup Ordner kannst du nach
             der Installation löschen.
-        </p>
-
-        <br>
-
-        <p>
-            Falls eine Nachricht von Windows Defender kommen sollte,
-            ist das nur, weil keine kostenpflichtige Signatur für die
-            .exe von dem Ersteller (CatClickerSoftware) bezahlt wurde.
-            Klicke auf weitere Informationen und auf Trotzdem ausführen.
         </p>
 
         <br>
